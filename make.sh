@@ -20,7 +20,7 @@ fi
 
 clear
 
-C_FLAGS="-std=c99 ${OPTIMIZATION} -Wall -Wextra -pedantic -Wno-unused-parameter -Wno-missing-field-initializers -o sample.exe"
+C_FLAGS="-std=c99 ${OPTIMIZATION} -Wall -Wextra -pedantic -Wno-unused-parameter -Wno-missing-field-initializers -o conway.exe"
 
 COMPILER='gcc'
 
