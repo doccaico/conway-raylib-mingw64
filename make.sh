@@ -20,13 +20,13 @@ fi
 
 clear
 
-C_FLAGS="-std=c99 ${OPTIMIZATION} -Wall -Wextra -pedantic -Wno-unused-parameter -Wno-missing-field-initializers -o conway.exe"
+C_FLAGS="-std=c99 ${OPTIMIZATION} -Wall -Wextra -pedantic -Wno-unused-parameter -Wno-missing-field-initializers"
 
 COMPILER='gcc'
 
-COMMAND="${COMPILER} ${C_FLAGS} src/main.c
-          -IC:/libs/raylib/include
-          -LC:/libs/raylib/lib
+COMMAND="${COMPILER} ${C_FLAGS} src/main.c -o conway.exe
+          -IC:/libs/raylib-5.0_win64_mingw-w64/include
+          -LC:/libs/raylib-5.0_win64_mingw-w64/lib
           ${HIDE_CONSOLE}
           -lraylib -lwinmm -lgdi32"
 
